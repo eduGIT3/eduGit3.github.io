@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Presentación</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistemas de Gestión Empresarial</h1>
+    </header>
+    <aside>
+        <div>
+            <button id="boton" onclick="menu()"><img src="./IMG/menu.png" alt="menu"></button>
+            <ul class="boton" id="lista">
+                <li><a href="./generalSGE.html">¿Qué es un SGE?</a></li>
+                <li><a href="./SGE-Especifico.html">Dolibarr</a></li>
+                <li><a href="#pie">Creditos</a></li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <main>
+        <div>
+            <p>
+                Esta web ha sido creada para la asignatura de lenguajes de marcas con el motivo de realizar la tarea 6.1
+                Aquí de este espacio, se analizarán los conceptos clave de los SGE, sus principales tipologías y las
+                características que los definen. Además, se documentará de forma práctica la instalación, configuración
+                y administración de una solución de software libre, evaluando aspectos críticos como la seguridad de la
+                información, la gestión de roles de usuario, y la capacidad para elaborar y exportar informes
+                estratégicos.
+            </p>
+
+        </div>
+        <div>
+            <article></article>
+            <article></article>
+        </div>
+
+    </main>
+    <footer id="pie">
+        <p>Esta web ha asido realizada por Eduardo Calvo 1ºDAM</p>
+    </footer>
+
+</body>
+
+<script>
+    function menu() {
+
+        let lista = document.getElementById('lista');
+
+        lista.classList.toggle('boton');
+    }
+</script>
+
+</html>
