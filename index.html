@@ -1,276 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VetGranada | Tu Veterinaria de Confianza</title>
-    
-    <link rel="stylesheet" href="paginaweb.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Presentación</title>
 </head>
+
 <body>
 
-    <a href="#" id="whatsapp-btn" class="flash-action-btn" title="Contáctanos por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
     <header>
-        <div class="container">
-            <h1>VetGranada 🐾</h1>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#opiniones">Opiniones</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Sistemas de Gestión Empresarial</h1>
     </header>
+    <aside>
+        <div>
+            <button id="boton" onclick="menu()"><img src="./IMG/menu.png" alt="menu"></button>
+            <ul class="boton" id="lista">
+                <li><a href="./generalSGE.html">¿Qué es un SGE?</a></li>
+                <li><a href="./SGE-Especifico.html">Dolibarr</a></li>
+                <li><a href="#pie">Creditos</a></li>
+            </ul>
+        </div>
+    </aside>
+
 
     <main>
-        <section id="inicio" class="hero">
-            <div class="container">
-                <h2>Cuidado y Amor para tus Mascotas en el Corazón de Granada</h2>
-                <p>Tu mejor amigo merece la mejor atención. En VetGranada, combinamos experiencia, tecnología y un trato cariñoso.</p>
-                <a href="#servicios" class="btn-primary">Ver Servicios</a>
-            </div>
-        </section>
+        <div>
+            <p>
+                Esta web ha sido creada para la asignatura de lenguajes de marcas con el motivo de realizar la tarea 6.1
+                Aquí de este espacio, se analizarán los conceptos clave de los SGE, sus principales tipologías y las
+                características que los definen. Además, se documentará de forma práctica la instalación, configuración
+                y administración de una solución de software libre, evaluando aspectos críticos como la seguridad de la
+                información, la gestión de roles de usuario, y la capacidad para elaborar y exportar informes
+                estratégicos.
+            </p>
 
-        <section id="servicios" class="services hidden-scroll">
-            <div class="container">
-                <h3>Nuestros Servicios Especializados</h3>
-                <div class="service-grid">
-                    <div class="service-card"><i class="fas fa-syringe"></i><h4>Medicina Preventiva</h4><p>Vacunación, desparasitación y chequeos regulares.</p></div>
-                    <div class="service-card"><i class="fas fa-x-ray"></i><h4>Diagnóstico Avanzado</h4><p>Radiología, ecografía y análisis clínicos.</p></div>
-                    <div class="service-card"><i class="fas fa-cut"></i><h4>Cirugía y Hospitalización</h4><p>Cirugías seguras y recuperación post-operatoria.</p></div>
-                    <div class="service-card"><i class="fas fa-tooth"></i><h4>Odontología Veterinaria</h4><p>Prevención y tratamiento de enfermedades dentales.</p></div>
-                </div>
-            </div>
-        </section>
+        </div>
+        <div>
+            <article></article>
+            <article></article>
+        </div>
 
-        <section id="nosotros" class="about hidden-scroll">
-            <div class="container">
-                <div class="about-content">
-                    <div class="text-content">
-                        <h3>Sobre VetGranada</h3>
-                        <p>Fundada hace más de **15 años**, VetGranada se ha convertido en un referente de salud animal en la ciudad. Nuestro equipo de veterinarios altamente cualificados y amantes de los animales está comprometido con ofrecer una atención integral y personalizada.</p>
-                        <p>Creemos en la medicina preventiva como pilar de una vida larga y saludable para tu mascota, y contamos con la tecnología más avanzada para ofrecer diagnósticos precisos y tratamientos efectivos.</p>
-                    </div>
-                    <div class="image-content">
-                        <img src="./interior moderno.jpg" alt="Interior moderno de la clínica VetGranada">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="equipo" class="team hidden-scroll">
-            <div class="container">
-                <h3>Conoce a Nuestro Equipo</h3>
-                <div class="team-grid">
-                    <div class="team-card">
-                        <img src="./directora.jpg" alt="Foto de la Dra. Elena Ríos">
-                        <h4>Dra. Elena Ríos</h4>
-                        <p class="team-title">Directora Clínica - Cirugía</p>
-                    </div>
-                    <div class="team-card">
-                        <img src="./doctor.jpg" alt="Foto del Dr. Carlos Vega">
-                        <h4>Dr. Carlos Vega</h4>
-                        <p class="team-title">Medicina Interna y Diagnóstico</p>
-                    </div>
-                    <div class="team-card">
-                        <img src="./vetrinaria1.jpg" alt="Foto de Sara Jiménez">
-                        <h4>Sara Jiménez</h4>
-                        <p class="team-title">Auxiliar Veterinaria (ATV)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="opiniones" class="testimonials hidden-scroll">
-            <div class="container">
-                <h3>Lo que dicen nuestros clientes</h3>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card">
-                        <p>"El trato fue inmejorable. Se nota que aman a los animales. Mi perro 'Toby' entró asustado y salió moviendo la cola. ¡Gracias!"</p>
-                        <h4>- María G.</h4>
-                        <div class="stars-display">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>"Profesionalidad absoluta. Tuvieron un diagnóstico certero con mi gata 'Luna' cuando en otros sitios no daban con la tecla. Muy recomendables."</p>
-                        <h4>- Javier R.</h4>
-                        <div class="stars-display">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p>"Las instalaciones están impecables y el equipo es muy amable. Me explicaron todo el proceso de la cirugía de 'Coco' con mucha paciencia."</p>
-                        <h4>- Laura P.</h4>
-                        <div class="stars-display">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="galeria" class="gallery hidden-scroll">
-            <div class="container">
-                <h3>Nuestras Instalaciones y Pacientes Felices</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item"><img src="./interior moderno.jpg" alt="Recepción moderna de la clínica veterinaria"></div>
-                    <div class="gallery-item"><img src="./sala.jpg" alt="Sala de cirugía veterinaria con equipo moderno"></div>
-                    <div class="gallery-item"><img src="./feliz.jpg" alt="Perro feliz con su dueño y el veterinario"></div>
-                    <div class="gallery-item"><img src="./gato.jpg" alt="Gato en mesa de examen veterinario"></div>
-                    <div class="gallery-item"><img src="./perro.jpg" alt="Cachorro en revisión con veterinario"></div>
-                    <div class="gallery-item"><img src="./aniamles.jpg" alt="Sala de alojo de animales"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-banner">
-            <div class="container">
-                <h3>¿Tu mascota necesita atención urgente?</h3>
-                <p>No esperes más. Nuestro equipo está listo para ayudarte.</p>
-                <a href="tel:+34958123456" class="btn-primary">¡Llámanos Ahora! (958 123 456)</a>
-            </div>
-        </section>
-
-        <section id="contacto" class="contact-form-section hidden-scroll">
-            <div class="container">
-                <h3>Contacta con Nosotros</h3>
-                <p>Rellena el formulario para cualquier consulta o para pedir cita. Te responderemos lo antes posible.</p>
-                
-                <form id="contacto-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="contacto-nombre">Nombre Completo:</label>
-                            <input type="text" id="contacto-nombre" name="contacto-nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="contacto-email">Email:</label>
-                            <input type="email" id="contacto-email" name="contacto-email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="contacto-asunto">Asunto:</label>
-                        <input type="text" id="contacto-asunto" name="contacto-asunto">
-                    </div>
-                    <div class="form-group">
-                        <label for="contacto-mensaje">Mensaje:</label>
-                        <textarea id="contacto-mensaje" name="contacto-mensaje" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" id="submit-contacto">Enviar Mensaje</button>
-                    <p id="contact-form-message" class="form-status-message"></p>
-                </form>
-            </div>
-        </section>
-
-        <section id="ubicacion" class="location hidden-scroll">
-            <div class="container">
-                <h3>Ubicación y Horario</h3>
-                <div class="contact-info">
-                    <div class="contact-details">
-                        <h4>Ven a Visitarnos</h4>
-                        <ul>
-                            <li><i class="fas fa-phone"></i> Teléfono: +34 958 123 456</li>
-                            <li><i class="fas fa-envelope"></i> Email: info@vetgranada.es</li>
-                            <li><i class="fas fa-map-marker-alt"></i> Dirección: C/ Mascotas Felices, 10, 18005 Granada</li>
-                            <li><i class="fas fa-clock"></i> Horario: L-V: 9:00 - 20:00 | Sáb: 10:00 - 14:00</li>
-                        </ul>
-                    </div>
-                    <div class="contact-map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.288661845196!2d-3.599728684699505!3d37.1700419798733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb9d79905b1%3A0x1d7c4a02f3c0d836!2sPlaza%20Nueva!5e0!3m2!1ses!2ses!4v1678886400000!5m2!1ses!2ses" 
-                            width="100%" 
-                            height="300" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Mapa de ubicación de VetGranada (Plaza Nueva, Granada)">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="satisfaccion" class="satisfaction-form hidden-scroll">
-            <div class="container">
-                <h3>Tu Opinión es Importante</h3>
-                <p>¿Ya nos has visitado? Ayúdanos a mejorar con esta breve encuesta.</p>
-                <form id="satisfaccion-form">
-                    <div class="form-group">
-                        <label for="servicio">Servicio Evaluado:</label>
-                        <select id="servicio" name="servicio" required>
-                            <option value="">Selecciona un servicio</option>
-                            <option value="preventiva">Medicina Preventiva</option>
-                            <option value="diagnostico">Diagnóstico</option>
-                            <option value="cirugia">Cirugía</option>
-                            <option value="odontologia">Odontología</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                    <div class="form-group rating">
-                        <label>Valoración General:</label>
-                        <div class="stars">
-                            <i class="far fa-star" data-rating="1"></i>
-                            <i class="far fa-star" data-rating="2"></i>
-                            <i class="far fa-star" data-rating="3"></i>
-                            <i class="far fa-star" data-rating="4"></i>
-                            <i class="far fa-star" data-rating="5"></i>
-                        </div>
-                        <input type="hidden" id="valoracion" name="valoracion" value="0" required>
-                    </div>
-                    <button type="submit" id="submit-satisfaccion">Enviar Opinión</button>
-                    <p id="form-message" class="form-status-message"></p>
-                </form>
-            </div>
-        </section>
     </main>
-
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h4>Sobre VetGranada</h4>
-                <p>Tu clínica veterinaria de confianza en Granada. Fundada hace 15 años con la misión de ofrecer el mejor cuidado para tus mascotas.</p>
-            </div>
-            
-            <div class="footer-col">
-                <h4>Enlaces Rápidos</h4>
-                <ul>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#equipo">Nuestro Equipo</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#opiniones">Opiniones</a></li>
-                    <li><a href="#contacto">Pedir Cita</a></li>
-                    <li><a href="#">Aviso Legal</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4>Contacto y Redes</h4>
-                <p>C/ Mascotas Felices, 10, Granada</p>
-                <p>Tel: 958 123 456</p>
-                <div class="footer-social">
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" id="footer-whatsapp-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            © 2025 VetGranada. Todos los derechos reservados.
-        </div>
+    <footer id="pie">
+        <p>Esta web ha asido realizada por Eduardo Calvo 1ºDAM</p>
     </footer>
 
-    <script src="paginaweb.js"></script>
 </body>
+
+<script>
+    function menu() {
+
+        let lista = document.getElementById('lista');
+
+        lista.classList.toggle('boton');
+    }
+</script>
+
 </html>
