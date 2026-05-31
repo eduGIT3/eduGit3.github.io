@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/cssGeneral.css">
+    <title>GeneralSGE</title>
+</head>
+<body>
+     <header>
+        <h1>Sistemas de Gestión Empresarial</h1>
+    </header>
+    <aside>
+        <div>
+           <button id="boton" onclick="menu()"><img src="./IMG/menu.png" alt="menu"></button> 
+            <ul class="boton" id="lista">
+                <li><a href="./index.html">Página de inicio</a></li>
+                <li><a href="./SGE-Especifico.html">Dolibarr</a></li>
+               <li><a href="#pie">Creditos</a></li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <main>
+    <section>
+       
+        <h2>¿Qué es un SGE?</h2>
+        <p>
+            Un <strong>Sistema de Gestión Empresarial (SGE)</strong>, frecuentemente conocido como <strong>ERP</strong> (Enterprise Resource Planning o Planificación de Recursos Empresariales), es un conjunto de aplicaciones de software integradas que permiten automatizar y centralizar la gran mayoría de las prácticas de negocio asociadas con los aspectos operativos o productivos de una empresa.
+        </p>
+        <p>
+            A diferencia de los programas tradicionales que analizan cada departamento por separado, un SGE comparte una <strong>única base de datos centralizada</strong>. Esto significa que la información introducida por el departamento de ventas (como un pedido) está disponible instantáneamente para los departamentos de almacén, contabilidad y logística, eliminando la duplicidad de datos y los errores humanos.
+        </p>
+    </section>
+
+    <section>
+        <h2>Características Fundamentales</h2>
+        <p>Para que un software sea considerado un SGE o ERP real, debe cumplir con tres pilares técnicos básicos:</p>
+        
+        <ul>
+            <li>
+                <strong>Modularidad</strong> La empresa está dividida en diferentes departamentos, y el software también. Un SGE se compone de "módulos" independientes (Finanzas, Recursos Humanos, Inventario, CRM, Compras) que se pueden instalar o activar de forma progresiva según las necesidades del negocio.
+            </li>
+            <li>
+                <strong>Integrabilidad</strong> Todos los módulos se comunican entre sí y comparten la misma base de datos. Cualquier transacción en un módulo genera un impacto automático en los demás departamentos relacionados.
+            </li>
+            <li>
+                <strong>Adaptabilidad</strong> El código y la configuración del sistema son flexibles. Permiten moldear el software para que se adapte a los flujos de trabajo específicos de cada empresa mediante reglas de negocio, sin necesidad de reprogramar todo el sistema desde cero.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tipos de Sistemas de Gestión Empresarial</h2>
+        <p>
+            Los SGE se pueden clasificar principalmente bajo dos criterios: según su <strong>arquitectura o forma de instalación</strong>, y según su <strong>modelo de licenciamiento</strong>.
+        </p>
+
+        <h3>1. Según su instalación:</h3>
+        <ul>
+            <li><strong>On-Premise (Local):</strong> El software se instala en los servidores físicos de la propia empresa. Requiere mayor inversión inicial en hardware y mantenimiento técnico.</li>
+            <li><strong>Cloud (En la nube / SaaS):</strong> El sistema está alojado en los servidores del proveedor. Se accede a él a través de un navegador web y se paga una suscripción mensual, reduciendo costes de infraestructura.</li>
+        </ul>
+
+        <h3>2. Según su licencia (Tabla Comparativa):</h3>
+        <p>Esta es una de las distinciones más importantes en el mercado actual:</p>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Criterio</th>
+                    <th>SGE Propietario (De Pago)</th>
+                    <th>SGE Open Source (Código Abierto)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Coste de Licencia</strong></td>
+                    <td>Alto. Se paga por usuario, por módulo o mediante contratos anuales.</td>
+                    <td>Gratuito en su versión base (sin coste de adquisición de licencia).</td>
+                </tr>
+                <tr>
+                    <td><strong>Acceso al Código</strong></td>
+                    <td>Cerrado. Solo el fabricante original puede modificarlo o auditarlo.</td>
+                    <td>Abierto. Cualquier desarrollador puede ver, modificar y mejorar el código fuente.</td>
+                </tr>
+                <tr>
+                    <td><strong>Soporte y Garantía</strong></td>
+                    <td>Ofrecido directamente por la empresa creadora (contratos de soporte estrictos).</td>
+                    <td>Respaldado por una comunidad global de desarrolladores y empresas partners.</td>
+                </tr>
+                <tr>
+                    <td><strong>Ejemplos Reales</strong></td>
+                    <td>SAP, Microsoft Dynamics 365, Sage.</td>
+                    <td>Odoo (Community), Dolibarr, ERPNext.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+
+  <footer id="pie">
+        <p>Esta web ha sido realizada por Eduardo Calvo 1ºDAM</p>
+    </footer>
+
+
+</body>
+
+<script>
+    function menu(){
+        
+        let lista = document.getElementById('lista');
+
+        lista.classList.toggle('boton');
+    }
+
+
+    window.addEventListener('click', function(evento) {
+    let lista = document.getElementById('lista');
+    let boton = document.getElementById('boton');
+    
+    // Esto sirve para al abrir el menu de hamburguesa y tocar en otro lado se cierra en vez de solo porder darle al botón
+    if (!lista.classList.contains('boton') && evento.target !== boton && !boton.contains(evento.target)) {
+        lista.classList.add('boton'); 
+    }
+});
+</script>
+</html>
